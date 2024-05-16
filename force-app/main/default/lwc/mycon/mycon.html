@@ -1,0 +1,17 @@
+<template>
+    <lightning-card >
+        <template if:true={showButton}>
+            <lightning-button label="Hide" onclick={handleClick} variant="brand"></lightning-button>
+            <ul>
+                <template for:each={contacts.data} for:item="item">
+                    <li key={item.Id}>
+                        <h1>{item.email}</h1>
+                        <h1>{item.LastName}</h1>
+                    </li>
+                </template>
+            </ul>
+            </template>
+            <lightning-button label="Show" onclick={handleClicktoggle} variant="brand"></lightning-button>
+        
+    </lightning-card>
+</template>

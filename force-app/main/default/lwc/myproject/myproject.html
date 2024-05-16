@@ -1,0 +1,13 @@
+<template>
+    <p style="color:brown; font-size:25px"> Welcome to LWC tutorial </p>
+     
+    <lightning-input type="text" label="Name" value={name} onchange={handleChange} name ="name"></lightning-input>
+    <lightning-input type="number" label="Age" value={age} onchange={handleChange} name ="age"></lightning-input>
+    <lightning-input type="text" label="email" value={email} onchange={handleChange} name ="email"></lightning-input>
+    <lightning-input type="text" label="Skillset" value={Skillset} onchange={handleChange} name ="Skillset"></lightning-input>
+
+</p>
+
+    <lightning-button label="Submit" title="Click me" onclick={handleClick} ></lightning-button>
+   
+</template>

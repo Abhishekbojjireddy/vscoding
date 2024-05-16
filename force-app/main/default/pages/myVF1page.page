@@ -1,0 +1,12 @@
+<apex:page controller="Mycontacts">
+<apex:form >
+<apex:pageblock >
+<apex:pageblockSection >
+<apex:inputText value="{!mycontacts.name}"/>
+<apex:inputText value="{!mycontacts.firstname}"/>
+<apex:inputText value="{!mycontacts.lastname}"/>
+</apex:pageblockSection>
+<apex:commandButton value="Do Save" action="{!dosave}"/>
+</apex:pageblock>
+</apex:form>
+</apex:page>

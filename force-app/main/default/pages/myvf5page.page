@@ -1,0 +1,5 @@
+<apex:page standardController="contact" recordSetVar="con" >
+<apex:form >
+
+</apex:form>  
+</apex:page>

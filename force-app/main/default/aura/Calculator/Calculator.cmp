@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="Value_1"  type="double" />
+    <aura:attribute name="Value_2"  type="double" />
+    <aura:attribute name="Return"  type="double" />
+    
+    
+    <ui:inputNumber aura:id="Value" label= " Enter Value 1" value="{!v.Value_1}"/>
+    <ui:inputNumber label= " Enter Value 2" value="{!v.Value_2}"/>
+    
+    Result is :<ui:outputNumber aura:id ="val" value="{!v.Return}"/> <br></br>
+    
+    <lightning:button class="blue" aura:id="demo" label="+" onclick ="{!c.addition}"/>
+    <ui:button label="-" press ="{!c.subtraction}"/>
+    <ui:button label="/" press ="{!c.Division}"/>
+    <aura:handler name="change" value = "{!v.Value_1}" action ="{!c.validate1}"/>
+    
+</aura:component>
